@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrinithi Insurance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a', // blue-900
+                        secondary: '#3b82f6', // blue-500
+                        accent: '#f59e0b', // amber-500
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-primary text-3xl"></i>
+                        <span class="font-bold text-2xl text-primary">Shrinithi<br><span class="text-sm font-medium text-gray-500">Insurance</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium transition duration-150 ease-in-out">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-medium transition duration-150 ease-in-out">About Us</a>
+                    <a href="#plans" class="text-gray-700 hover:text-primary font-medium transition duration-150 ease-in-out">Plans</a>
+                    <a href="#claims" class="text-gray-700 hover:text-primary font-medium transition duration-150 ease-in-out">Claims</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition duration-150 ease-in-out">Contact</a>
+                    <a href="#quote" class="bg-primary hover:bg-blue-800 text-white px-6 py-2 rounded-full font-medium transition duration-150 ease-in-out">Get a Quote</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button type="button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background elements -->
+        <div class="absolute inset-0 bg-blue-50 z-0"></div>
+        <div class="absolute right-0 top-0 w-1/2 h-full bg-primary transform skew-x-12 translate-x-32 hidden lg:block z-0 opacity-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                        Secure Your Future with <span class="text-primary">Shrinithi Insurance</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Experience comprehensive coverage, fast claim settlements, and unwavering support. We protect what matters most to you.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+                        <a href="#quote" class="bg-primary hover:bg-blue-800 text-white px-8 py-4 rounded-full font-bold text-lg transition duration-300 ease-in-out shadow-lg hover:shadow-xl text-center">
+                            Get a Free Quote
+                        </a>
+                        <a href="#contact" class="bg-white hover:bg-gray-50 text-primary border-2 border-primary px-8 py-4 rounded-full font-bold text-lg transition duration-300 ease-in-out text-center">
+                            Speak to an Advisor
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-gray-200">
+                        <div>
+                            <p class="text-3xl font-bold text-primary">15+</p>
+                            <p class="text-sm text-gray-500 font-medium mt-1">Years Experience</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-primary">99%</p>
+                            <p class="text-sm text-gray-500 font-medium mt-1">Claim Settlement</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-primary">50k+</p>
+                            <p class="text-sm text-gray-500 font-medium mt-1">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block relative">
+                    <!-- A placeholder for a hero image -->
+                    <div class="bg-white p-2 rounded-2xl shadow-2xl relative z-10">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Family looking happy and secure" class="rounded-xl w-full h-auto object-cover" style="height: 500px;">
+                    </div>
+                    <!-- Decorative element -->
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-accent rounded-full z-0 opacity-50 blur-2xl"></div>
+                    <div class="absolute -top-6 -right-6 w-48 h-48 bg-secondary rounded-full z-0 opacity-30 blur-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Shrinithi Insurance?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We combine decades of industry expertise with cutting-edge technology to provide you with seamless, reliable, and comprehensive insurance solutions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="w-20 h-20 mx-auto bg-blue-100 text-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-bolt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Lightning Fast Claims</h3>
+                    <p class="text-gray-600">Experience our hassle-free digital claim process with guaranteed settlement within 24-48 hours for standard claims.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="w-20 h-20 mx-auto bg-blue-100 text-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-shield-cat text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Comprehensive Coverage</h3>
+                    <p class="text-gray-600">Tailored policies that cover you against all major risks, ensuring complete peace of mind for you and your family.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="w-20 h-20 mx-auto bg-blue-100 text-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-headset text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">24/7 Expert Support</h3>
+                    <p class="text-gray-600">Our dedicated team of advisors is available around the clock to assist you with any queries or emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Plans -->
+    <section id="plans" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="max-w-2xl">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Insurance Plans</h2>
+                    <p class="text-lg text-gray-600">Comprehensive protection tailored meticulously to elevate your financial security and peace of mind.</p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <a href="#contact" class="text-primary font-bold hover:text-blue-800 flex items-center gap-2">
+                        View All Plans <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Plan 1 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-blue-50 text-secondary rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-heart-pulse text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Health Insurance</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Comprehensive medical coverage including cashless hospitalization at top hospitals.</p>
+                        <a href="#" class="text-primary font-medium hover:underline text-sm">Learn More</a>
+                    </div>
+                </div>
+                <!-- Plan 2 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-blue-50 text-secondary rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-hands-holding-child text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Life Insurance</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Secure your family's future with term plans and guaranteed return policies.</p>
+                        <a href="#" class="text-primary font-medium hover:underline text-sm">Learn More</a>
+                    </div>
+                </div>
+                <!-- Plan 3 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-blue-50 text-secondary rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-car text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Vehicle Insurance</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Protect your car or two-wheeler against accidents, theft, and third-party liabilities.</p>
+                        <a href="#" class="text-primary font-medium hover:underline text-sm">Learn More</a>
+                    </div>
+                </div>
+                <!-- Plan 4 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-blue-50 text-secondary rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-house-chimney text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Home Insurance</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Safeguard your most valuable asset against natural disasters, fire, and burglary.</p>
+                        <a href="#" class="text-primary font-medium hover:underline text-sm">Learn More</a>
+                    </div>
+                </div>
+                <!-- Plan 5 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-blue-50 text-secondary rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-plane-departure text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Travel Insurance</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Travel worry-free with coverage for medical emergencies and trip cancellations.</p>
+                        <a href="#" class="text-primary font-medium hover:underline text-sm">Learn More</a>
+                    </div>
+                </div>
+                <!-- Plan 6 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-blue-50 text-secondary rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-briefcase text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Business Insurance</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Customized risk management solutions to protect your business assets and operations.</p>
+                        <a href="#" class="text-primary font-medium hover:underline text-sm">Learn More</a>
+                    </div>
+                </div>
+                <!-- Plan 7 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-blue-50 text-secondary rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-user-shield text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Personal Accident</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Financial support in case of accidental death or permanent/temporary disability.</p>
+                        <a href="#" class="text-primary font-medium hover:underline text-sm">Learn More</a>
+                    </div>
+                </div>
+                <!-- Plan 8 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden group">
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-blue-50 text-secondary rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-piggy-bank text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Retirement Plans</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Build a steady corpus to ensure financial independence during your golden years.</p>
+                        <a href="#" class="text-primary font-medium hover:underline text-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="claims" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Real stories from people who trusted us to protect what matters most.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-blue-100 absolute top-6 right-6"></i>
+                    <div class="flex items-center mb-6">
+                        <div class="text-secondary flex gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"When I had a medical emergency, Shrinithi Insurance's cashless network was a lifesaver. The claim was approved within hours with absolutely zero hassle."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-primary font-bold text-xl">A</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Arun Kumar</h4>
+                            <p class="text-sm text-gray-500">Health Insurance Client</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-blue-100 absolute top-6 right-6"></i>
+                    <div class="flex items-center mb-6">
+                        <div class="text-secondary flex gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"Excellent customer service! The team took the time to explain all the intricacies of my life insurance policy, ensuring I got exactly what my family needed."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-primary font-bold text-xl">P</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Priya Sharma</h4>
+                            <p class="text-sm text-gray-500">Life Insurance Client</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 relative">
+                    <i class="fa-solid fa-quote-left text-4xl text-blue-100 absolute top-6 right-6"></i>
+                    <div class="flex items-center mb-6">
+                        <div class="text-secondary flex gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">"After an accident, my car insurance claim was handled so swiftly. The repair shop was paid directly and I was back on the road in no time."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-primary font-bold text-xl">R</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Rahul Verma</h4>
+                            <p class="text-sm text-gray-500">Motor Insurance Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-5">
+                    <!-- Contact Info -->
+                    <div class="bg-primary text-white p-10 lg:col-span-2 relative overflow-hidden">
+                        <div class="relative z-10">
+                            <h3 class="text-3xl font-bold mb-6">Get in Touch</h3>
+                            <p class="text-blue-100 mb-10 text-lg">Have questions about our policies? Need a customized quote? Our experts are ready to help you.</p>
+
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-4">
+                                    <i class="fa-solid fa-location-dot mt-1 text-xl text-accent"></i>
+                                    <div>
+                                        <h4 class="font-bold text-lg">Visit Us</h4>
+                                        <p class="text-blue-100">123 Business Avenue, Tech Park<br>Chennai, Tamil Nadu 600001</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <i class="fa-solid fa-phone mt-1 text-xl text-accent"></i>
+                                    <div>
+                                        <h4 class="font-bold text-lg">Call Us</h4>
+                                        <p class="text-blue-100">Toll Free: 1800-123-4567<br>Support: +91 98765 43210</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <i class="fa-solid fa-envelope mt-1 text-xl text-accent"></i>
+                                    <div>
+                                        <h4 class="font-bold text-lg">Email Us</h4>
+                                        <p class="text-blue-100">support@shrinithiinsurance.com<br>quotes@shrinithiinsurance.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Decorative shapes -->
+                        <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-blue-800 rounded-full opacity-50 z-0"></div>
+                        <div class="absolute -top-12 -left-12 w-40 h-40 bg-blue-700 rounded-full opacity-50 z-0"></div>
+                    </div>
+
+                    <!-- Form -->
+                    <div class="p-10 lg:col-span-3">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6" id="quote">Request a Free Quote</h3>
+                        <form action="#" method="POST" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-150" placeholder="John Doe" required>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-150" placeholder="+91 XXXXX XXXXX" required>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-150" placeholder="john@example.com">
+                                </div>
+                                <div>
+                                    <label for="insurance_type" class="block text-sm font-medium text-gray-700 mb-1">Insurance Type *</label>
+                                    <select id="insurance_type" name="insurance_type" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-150 bg-white" required>
+                                        <option value="" disabled selected>Select an option</option>
+                                        <option value="health">Health Insurance</option>
+                                        <option value="life">Life Insurance</option>
+                                        <option value="vehicle">Vehicle Insurance</option>
+                                        <option value="home">Home Insurance</option>
+                                        <option value="business">Business Insurance</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Additional Details (Optional)</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-150" placeholder="Tell us more about your specific requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-blue-800 text-white font-bold py-4 rounded-lg transition duration-300 shadow-md hover:shadow-lg text-lg">
+                                Get Your Quote Now
+                            </button>
+                            <p class="text-xs text-gray-500 text-center mt-4">By submitting this form, you agree to our Terms of Service and Privacy Policy.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 border-b border-gray-800 pb-12">
+                <!-- Brand -->
+                <div>
+                    <a href="#" class="flex-shrink-0 flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-shield-halved text-secondary text-3xl"></i>
+                        <span class="font-bold text-2xl text-white">Shrinithi<br><span class="text-sm font-medium text-gray-400">Insurance</span></span>
+                    </a>
+                    <p class="text-gray-400 mb-6">Providing comprehensive insurance solutions and reliable protection for what matters most to you.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-white transition duration-300"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-white transition duration-300"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-white transition duration-300"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-white transition duration-300"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-secondary transition duration-150"><i class="fa-solid fa-chevron-right text-xs mr-2"></i>Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-secondary transition duration-150"><i class="fa-solid fa-chevron-right text-xs mr-2"></i>About Us</a></li>
+                        <li><a href="#plans" class="text-gray-400 hover:text-secondary transition duration-150"><i class="fa-solid fa-chevron-right text-xs mr-2"></i>Our Plans</a></li>
+                        <li><a href="#claims" class="text-gray-400 hover:text-secondary transition duration-150"><i class="fa-solid fa-chevron-right text-xs mr-2"></i>Claim Process</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-secondary transition duration-150"><i class="fa-solid fa-chevron-right text-xs mr-2"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-secondary transition duration-150"><i class="fa-solid fa-chevron-right text-xs mr-2"></i>Health Insurance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-secondary transition duration-150"><i class="fa-solid fa-chevron-right text-xs mr-2"></i>Life Insurance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-secondary transition duration-150"><i class="fa-solid fa-chevron-right text-xs mr-2"></i>Motor Insurance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-secondary transition duration-150"><i class="fa-solid fa-chevron-right text-xs mr-2"></i>Home Insurance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-secondary transition duration-150"><i class="fa-solid fa-chevron-right text-xs mr-2"></i>Corporate Plans</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-white">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our newsletter to get latest updates and insurance tips.</p>
+                    <form action="#" class="flex">
+                        <input type="email" placeholder="Your email address" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-secondary text-white" required>
+                        <button type="submit" class="bg-secondary hover:bg-blue-600 px-4 py-2 rounded-r-lg text-white transition duration-150">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2024 Shrinithi Insurance. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition duration-150">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition duration-150">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition duration-150">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
